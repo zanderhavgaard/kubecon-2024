@@ -135,3 +135,40 @@ https://cloudnative-pg.io/
 > I don't think we need to run our postgres in k8s right now, but if we need scaling in the future, or postgres caches, then this looks very interesting.
 
 Temporary dev postgres cluster created for the day, and then torn down at the end of the day -> could we do a daily clone of production instead of dedicated dev dbs?
+
+## Lightning Talks
+
+### ⚡ Lightning Talk: Enabling Hot Restart of Stateful Applications Including GPU-Accelerate AI/ML Workloads - Bernie Wu, MemVerge
+
+https://colocatedeventseu2024.sched.com/event/1YFiB/cl-lightning-talk-enabling-hot-restart-of-stateful-applications-including-gpu-accelerate-aiml-workloads-bernie-wu-memverge
+
+Enable Data/AI/ML workloads to be k8s native - Rescheduled ad hoc, resilience, spot instances etc.
+
+CRIU - https://criu.org/Main_Page
+Freeze state of running container and persist to disk and allow restore to exactly same state, i.e. on a different node.
+
+### ⚡ Lightning Talk: My Database Runs on Kubernetes. What's Next? Data Platforms! - Robert Hodges, Altinity
+
+https://colocatedeventseu2024.sched.com/event/1aCb6/cl-lightning-talk-my-database-runs-on-kubernetes-whats-next-data-platforms-robert-hodges-altinity
+
+"Data platform == custom stack to solve business problem"
+
+"Kubernetes encourages app vs platform functions"
+
+"Even in startups with 2 people, one person makes the app and one makes platform, b/c/ it's just easier"
+
+'shims' as a interface between app and platform, enabled by k8s control-plane, example: PVC/PV - ig. AWS EBS CSI Driver
+
+### ⚡ Lightning Talk: Ditching Data Pipelines: why treating Data as Assets is the best thing you can do - Andrea Giardini, Independent
+
+https://colocatedeventseu2024.sched.com/event/1YFiG/cl-lightning-talk-ditching-data-pipelines-why-treating-data-as-assets-is-the-best-thing-you-can-do-andrea-giardini-independent
+
+AirFlow is like Jenkins ... and is very good about how data is created ...
+
+... but we care more about how data relates to each other.
+
+We should treat data as assetes instead.
+
+Dagster get's it right -> data is assetes with relations to other data.
+
+Cloud Native first, integrates with things we use.
