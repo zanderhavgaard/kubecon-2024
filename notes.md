@@ -187,3 +187,59 @@ MongoDB ...
 Using kubernetes operator for self hosted mongodb
 
 - data plane and control plane running in k8s
+
+## Advanced CSI-FUSE Filesystem for AI/ML Data Management in Kubernetes - Lu Qiu, Alluxio
+
+https://colocatedeventseu2024.sched.com/event/1YFj3/advanced-csi-fuse-filesystem-for-aiml-data-management-in-kubernetes-lu-qiu-alluxio
+
+FUSE - Turn cloud storage into local filesystem
+
+- S3 FUSE - https://github.com/s3fs-fuse/s3fs-fuse
+
+Performance can be improved by using local caches - S3FS has cache feature
+
+Apache Arrow is useful for transmitting data between technologies
+
+FSSpec can be used for interfacing arrow data with files.
+https://filesystem-spec.readthedocs.io/en/latest/
+
+Ray - framework for scheduling ML jobs/workloads - https://docs.ray.io/en/latest/index.html
+
+## Cloud-Native Dataspaces: Experiences from the German Research Data Ecosystem - Sebastian Beyvers, Justus Liebig University Giessen
+
+https://colocatedeventseu2024.sched.com/event/1YFjZ/cloud-native-dataspaces-experiences-from-the-german-research-data-ecosystem-sebastian-beyvers-justus-liebig-university-giessen
+
+FAIR data principle, data should be ...
+
+- Findable
+- Accessible
+- Interoperable
+- Reusable
+
+Using Cloud Native tools to build data spaces:
+
+Status quo -> domains with different data formates / technologies -> each domain in it's own silo, with it's own practices.
+
+New -> k8s based with FAIR:
+
+Metadata:
+
+- Dublin core based
+- title, author, description, lables, relations
+- techincal: size, location, acl
+
+Data exchange -> s3 compatible interface
+OIDC for auth
+Distributed metada storage with centralized search interface
+
+Multiple clusters, cluster per domain, linked with Istio
+
+Powered by event driven architecture with NATS and Argo Events
+Argo workflows for compute
+
+WIP reference implementation:
+https://aruna-storage.org/
+
+## Released From the Cage: Apache Kafka Without Its ZooKeeper - Jakub Scholz, Red Hat
+
+https://colocatedeventseu2024.sched.com/event/1YFk0/released-from-the-cage-apache-kafka-without-its-zookeeper-jakub-scholz-red-hat
