@@ -243,3 +243,7 @@ https://aruna-storage.org/
 ## Released From the Cage: Apache Kafka Without Its ZooKeeper - Jakub Scholz, Red Hat
 
 https://colocatedeventseu2024.sched.com/event/1YFk0/released-from-the-cage-apache-kafka-without-its-zookeeper-jakub-scholz-red-hat
+
+Strimzi is now a CNCF incubating project
+
+Goal is to get rid of zookeeper to make operations easier and more scalable.
