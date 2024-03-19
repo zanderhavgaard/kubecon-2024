@@ -22,6 +22,8 @@ KCP looks interesting
 
 https://colocatedeventseu2024.sched.com/event/1YFgB/panel-the-platform-rock-paper-scissors-build-adopt-buy-jorge-lainfiesta-independent-contributor-leena-mooneeram-chainalysis-victor-araujo-wolt-jinhong-brejnholt-saxo-bank-edgaras-petovradzius-lego-group
 
+---
+
 # DOK - Data on K8s
 
 ## Discover how to create your own metadata driven ML platform from scratch
@@ -109,8 +111,27 @@ https://www.kubeflow.org/docs/components/training/
 Kserver for deploying models
 https://kserve.github.io/website/0.11/
 
+---
+
 ## From Zero to Hero: Scaling Postgres in Kubernetes Using the Power of CloudNativePG - Gabriele Bartolini, EDB
 
 https://colocatedeventseu2024.sched.com/event/1YFha/from-zero-to-hero-scaling-postgres-in-kubernetes-using-the-power-of-cloudnativepg-gabriele-bartolini-edb
 
+"How to make the _world_ the single point of failure? (for your database)"
 
+"Running postgres in k8s is superior to _traditional_ ways of running postgres"
+
+Highly available postgres with CloudNativePG
+https://cloudnative-pg.io/
+
+- manages postgres clusters in k8s
+- production ready
+- install with helm
+- declarative management with k8s api
+- automatic failover, always one primary, and a number of redundant replicas, using pg to sync data between instances
+- continuous backup feature
+- failover from cluster to cluster
+
+> I don't think we need to run our postgres in k8s right now, but if we need scaling in the future, or postgres caches, then this looks very interesting.
+
+Temporary dev postgres cluster created for the day, and then torn down at the end of the day -> could we do a daily clone of production instead of dedicated dev dbs?
