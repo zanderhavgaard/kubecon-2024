@@ -172,3 +172,18 @@ We should treat data as assetes instead.
 Dagster get's it right -> data is assetes with relations to other data.
 
 Cloud Native first, integrates with things we use.
+
+## Lessons Learned from Building a Database Operator - Rajdeep Das & Sebastian Łaskawiec, MongoDB
+
+https://colocatedeventseu2024.sched.com/event/1YFiZ/lessons-learned-from-building-a-database-operator-rajdeep-das-sebastian-laskawiec-mongodb
+
+MongoDB ...
+
+- document database
+- transactional
+- flexible and scalable
+- streams and vector search
+
+Using kubernetes operator for self hosted mongodb
+
+- data plane and control plane running in k8s
