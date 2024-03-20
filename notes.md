@@ -247,3 +247,34 @@ https://colocatedeventseu2024.sched.com/event/1YFk0/released-from-the-cage-apach
 Strimzi is now a CNCF incubating project
 
 Goal is to get rid of zookeeper to make operations easier and more scalable.
+
+# KubeCon Day 1
+
+## Advanced Resource Management for Running AI/ML Workloads with Kueue - Michał Woźniak, Google & Yuki Iwai, CyberAgent, Inc.
+
+https://kccnceu2024.sched.com/event/1YeLj/advanced-resource-management-for-running-aiml-workloads-with-kueue-michal-wozniak-google-yuki-iwai-cyberagent-inc?iframe=no&w=100%&sidebar=yes&bg=no
+
+https://kueue.sigs.k8s.io/
+
+Kueue:
+
+- job-level scheduler
+- works on jobs, not pods
+- delay pod creation, off-load api-server and kube-scheduler
+- support 'all-or-nothing' processing (as linked jobs could deadlock)
+- resource quota management
+
+Kueue is 'kube-native', all state is in etcd, no external dbs
+Compatibel with other k8s components
+
+pods creation is gated by job admission
+integrates with other things?
+
+useful for scheduling batch workloads in an organized/resource-efficient way, using queues of workloads instead of 'pod-soup'
+
+workloads can have different priority
+
+kubeflow for training models
+kserve for deploying models
+
+
