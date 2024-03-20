@@ -324,3 +324,27 @@ https://github.com/k3s-io/kine
 They use kine to distribute their workloads across the different clusters, with extra api-servers in each cluster that share their state using kine, and the actual state is then synced from the kine-backed api-server to the 'real' api-server in each cluster
 
 multi-cluster federation is an increasingly important need
+
+## A Cilium Introduction: Back to Bee-Sics - Nico Vibert & Dan Finneran, Isovalent
+
+https://kccnceu2024.sched.com/event/1YeMX/a-cilium-introduction-back-to-bee-sics-nico-vibert-dan-finneran-isovalent?iframe=no&w=100%&sidebar=yes&bg=no
+
+---
+
+Chat at AWS booth:
+
+https://awslabs.github.io/data-on-eks/
+
+https://datahubproject.io/
+
+Data mesh ?
+
+Look up talks from previous KubeCons
+
+---
+
+## State of Platform Maturity in the Norwegian Public Sector - Hans Kristian Flaatten, Norwegian Labor and Welfare Administration
+
+https://kccnceu2024.sched.com/event/1YeMj/state-of-platform-maturity-in-the-norwegian-public-sector-hans-kristian-flaatten-norwegian-labor-and-welfare-administration?iframe=no&w=100%&sidebar=yes&bg=no
+
+https://offentlig-paas.no/
