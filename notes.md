@@ -348,3 +348,34 @@ Look up talks from previous KubeCons
 https://kccnceu2024.sched.com/event/1YeMj/state-of-platform-maturity-in-the-norwegian-public-sector-hans-kristian-flaatten-norwegian-labor-and-welfare-administration?iframe=no&w=100%&sidebar=yes&bg=no
 
 https://offentlig-paas.no/
+
+---
+
+## Dungeons and Deployments V2: The Clusters of Chaos - Kat Cosgrove, Dell Technologies; Noah Abrahams, Oracle; Seth McCombs, AcuityMD; Ian Coldwater, Independent; Natali Vlatko, Cisco
+
+https://kccnceu2024.sched.com/event/1YeMv/dungeons-and-deployments-v2-the-clusters-of-chaos-kat-cosgrove-dell-technologies-noah-abrahams-oracle-seth-mccombs-acuitymd-ian-coldwater-independent-natali-vlatko-cisco?iframe=no&w=100%&sidebar=yes&bg=no
+
+This was fun, good reminder to check up on the security of our cluster.
+
+TODO: watch the first session.
+
+https://www.youtube.com/watch?v=-CPrDLFM1Aw
+
+---
+
+## How to Save Millions Over Years Using KEDA? - Solene Butruille, BlackRock
+
+https://kccnceu2024.sched.com/event/1YeNo/how-to-save-millions-over-years-using-keda-solene-butruille-blackrock?iframe=no&w=100%&sidebar=yes&bg=no
+
+Aladdin compute - product for creating cloud workstations: jupyter notbooks and vscode-server instances.
+
+Scaling customers pods running workstations sessions, challenge is to know when to scale the pods up and down
+HPA is not very useful for this usecase ...
+
+KEDA seems a better fit by scaling on events
+
+KEDA needs an event source, could be prometheus
+
+KEDA has too permissive default RBAC permissions
+
+
