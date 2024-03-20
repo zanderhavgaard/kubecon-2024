@@ -277,4 +277,50 @@ workloads can have different priority
 kubeflow for training models
 kserve for deploying models
 
+---
 
+## Bloomberg's Journey to a Multi-Cluster Workflow Orchestration Platform - Yao Lin & Reinhard Tartler, Bloomberg
+
+https://kccnceu2024.sched.com/event/1YeLy?iframe=no
+
+Users provide:
+
+- code in containers
+- an execution plan: ordering, fan-out, synchronization
+- a triggering schedule
+
+they use argo workflows:
+
+- has a nice UI
+- ml orchestration
+- CI/CD
+- data processing pipelines
+
+what users expect:
+
+- non-functional:
+  - bookkeeping
+  - observability
+  - debuggability
+- functional:
+  - where is it running?
+  - approval guard
+  - scheduling events
+  - resiliency across datacenters
+
+A workflow consists of several parts:
+
+- the domain workflows - the "thing" you want to do
+- some config
+- some secrets
+- some "default" workflows, e.g. send a message to slack on workflow completion
+
+workflows have to run, even if one of the datacenters is not available
+
+they have better experience running multiple small clusters than fewer large clusters, b/c of better scalability and minimal 'noisy-neighbor' issues
+
+https://github.com/k3s-io/kine
+
+They use kine to distribute their workloads across the different clusters, with extra api-servers in each cluster that share their state using kine, and the actual state is then synced from the kine-backed api-server to the 'real' api-server in each cluster
+
+multi-cluster federation is an increasingly important need
