@@ -395,3 +395,38 @@ This talk was full but sounds very interesting, TODO: watch later
 https://kccnceu2024.sched.com/event/1YeOR/kubernetes-controllers-in-rust-fast-safe-sane-matei-david-buoyant?iframe=no&w=100%&sidebar=yes&bg=no
 
 `kube-rs` rust lib for interacting with k8s api.
+
+---
+
+## Leveling up Wasm Support in Kubernetes - Matt Butcher, Fermyon
+
+https://kccnceu2024.sched.com/event/1YeP7/leveling-up-wasm-support-in-kubernetes-matt-butcher-fermyon?iframe=no&w=100%&sidebar=yes&bg=no
+
+"serverless - the third wave of cloud computing"
+
+Serverless as a software development pattern where we don't care about the server
+
+Event driven
+
+"WASM - it's just another bytecode format"
+
+The kernel is not an attack surface in wasm (as it is for containers)
+
+SpinKube - run spin applications in k8s
+-> run hundreds of spin apps per k8s node
+
+https://spinkube.dev
+
+the spin app runs in a containerd-shim - which means it runs in a container in a pod, and can use all of the regular k8s functionalities, side-cars, etc.
+
+super fast scale-up/down start time b/c wasm artifacts are usually very small
+
+---
+
+https://ttl.sh/
+
+temporary registry for testing
+
+---
+
+great for edge/resource constrained deployments
