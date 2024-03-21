@@ -378,4 +378,20 @@ KEDA needs an event source, could be prometheus
 
 KEDA has too permissive default RBAC permissions
 
+---
 
+# KubeCon Day 2
+
+## To Infinity and Beyond: Seamless Autoscaling with in-Place Resource Resize for Kubernetes Pods - Aya Ozawa, CloudNatix Inc. & Kohei Ota, Apple
+
+https://kccnceu2024.sched.com/event/1YePO/to-infinity-and-beyond-seamless-autoscaling-with-in-place-resource-resize-for-kubernetes-pods-aya-ozawa-cloudnatix-inc-kohei-ota-apple?iframe=no&w=100%&sidebar=yes&bg=no
+
+This talk was full but sounds very interesting, TODO: watch later
+
+---
+
+## Kubernetes Controllers in Rust: Fast, Safe, Sane - Matei David, Buoyant
+
+https://kccnceu2024.sched.com/event/1YeOR/kubernetes-controllers-in-rust-fast-safe-sane-matei-david-buoyant?iframe=no&w=100%&sidebar=yes&bg=no
+
+`kube-rs` rust lib for interacting with k8s api.
