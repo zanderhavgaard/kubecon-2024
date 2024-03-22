@@ -421,6 +421,8 @@ the spin app runs in a containerd-shim - which means it runs in a container in a
 
 super fast scale-up/down start time b/c wasm artifacts are usually very small
 
+great for edge/resource constrained deployments
+
 ---
 
 https://ttl.sh/
@@ -429,4 +431,34 @@ temporary registry for testing
 
 ---
 
-great for edge/resource constrained deployments
+## From Bash Scripts to Kubeflow and GitOps: Our Journey to Operationalizing ML at Scale - Luca Grazioli & Dennis Ohrndorf, DHL Data & Analytics
+
+https://kccnceu2024.sched.com/event/1YePL/from-bash-scripts-to-kubeflow-and-gitops-our-journey-to-operationalizing-ml-at-scale-luca-grazioli-dennis-ohrndorf-dhl-data-analytics?iframe=no&w=100%&sidebar=yes&bg=no
+
+they have a flow of work `data scientist -> mlops engineer -> data engineer` with a platform team supporting all of them.
+
+They had trouble going from data science to deployed ml apps, introducing `kubeflow` helped here.
+
+> Architecture diagram from the slides is worth having a look at
+
+Stack: MAPR (https://www.tableau.com/solutions/mapr), apache spark, k8s, kubeflow(w/ argo workflows)/kserve, vscode/notebook server in k8s, argocd for gitops,
+
+Implementing kubeflow platform was high-effort/high-impact
+
+"kubeflow = data science platform"
+
+development work is done directly on kubeflow running in k8s
+
+kubeflow pipelines
+
+inference services hosted with kserve
+
+---
+
+kargo looks very useful for organizing the rollout/promotion of gitops applications
+
+https://github.com/akuity/kargo
+
+---
+
+# KubeCon Day 3
