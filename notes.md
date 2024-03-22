@@ -462,3 +462,25 @@ https://github.com/akuity/kargo
 ---
 
 # KubeCon Day 3
+
+## Things to check out:
+
+https://www.groundcover.com/
+
+https://grafana.com/oss/tempo/
+
+https://grafana.com/oss/mimir/
+
+https://opentelemetry.io/docs/languages/python/automatic/
+
+https://opentelemetry.io/docs/collector/
+
+https://www.kubeflow.org/
+
+https://training.linuxfoundation.org/training/introduction-to-ai-ml-toolkits-with-kubeflow-lfs147x/
+
+https://akuity.community
+
+## Kubernetes as a Data Platform - Robert Hodges, Altinity; Edith Puclla, Percona; Clayton Coleman, Google
+
+https://kccnceu2024.sched.com/event/1YeRv/kubernetes-as-a-data-platform-robert-hodges-altinity-edith-puclla-percona-clayton-coleman-google?iframe=no&w=100%&sidebar=yes&bg=no
